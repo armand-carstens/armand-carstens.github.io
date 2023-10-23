@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Armand Carstens</title>
+    <link>https://armand-carstens.github.io/blog/</link>
+    <description>Recent content in Blogs on Armand Carstens</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Oct 2023 16:44:15 +0200</lastBuildDate><atom:link href="https://armand-carstens.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>https://armand-carstens.github.io/blog/introduction/</link>
+      <pubDate>Mon, 23 Oct 2023 16:44:15 +0200</pubDate>
+      
+      <guid>https://armand-carstens.github.io/blog/introduction/</guid>
+      <description>Hello World, I am Armand 😊 As some of you may know, I have an obsession when it comes to PC and AI development. I am currently dedicating this blog to sharing my findings as a Junior Developer.
+Corporate Life To introduce myself, I work for a consultancy firm that develops software for Project Management in SAP systems for both international and national level companies. My job includes the following:</description>
+    </item>
+    
+  </channel>
+</rss>
