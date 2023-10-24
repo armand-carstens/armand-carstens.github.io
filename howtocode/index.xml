@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howtocodes on Armand Carstens</title>
+    <link>https://armand-carstens.github.io/howtocode/</link>
+    <description>Recent content in Howtocodes on Armand Carstens</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Oct 2023 12:13:10 +0200</lastBuildDate><atom:link href="https://armand-carstens.github.io/howtocode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Code (Part 1)</title>
+      <link>https://armand-carstens.github.io/howtocode/part1htc/</link>
+      <pubDate>Tue, 24 Oct 2023 12:13:10 +0200</pubDate>
+      
+      <guid>https://armand-carstens.github.io/howtocode/part1htc/</guid>
+      <description>Background To start coding, one should have &amp;lsquo;ikigai&amp;rsquo; to maintain a happy relationship with your new hobby/career. Instead of finding yourself too broke to live your passion or in a scenario where you suck at something, try and focus on maintaining the good in all areas.
+This is &amp;lsquo;Ikigai&amp;rsquo; visually: How to start ? The key to any skill if it be rugby players or mathematicians is to have a good foundational comprehension.</description>
+    </item>
+    
+  </channel>
+</rss>
