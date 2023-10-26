@@ -6,7 +6,17 @@
     <description>Recent content on Armand Carstens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Oct 2023 12:13:10 +0200</lastBuildDate><atom:link href="https://armand-carstens.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Oct 2023 08:44:07 +0200</lastBuildDate><atom:link href="https://armand-carstens.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Code (Part 2)</title>
+      <link>https://armand-carstens.github.io/howtocode/part2htc/</link>
+      <pubDate>Wed, 25 Oct 2023 08:44:07 +0200</pubDate>
+      
+      <guid>https://armand-carstens.github.io/howtocode/part2htc/</guid>
+      <description>Defining Basics Since you&amp;rsquo;ve chosen a starting point, I&amp;rsquo;d state the easiest one I know myself. The main goal of the series is to guide you all the way to linked lists and OOP.
+My parameters are as follows Python as a compiler and source code. My own current knowledge of the language. Explaining Turing technology with a simple example. Casting So, the first thing everyone should know is that the equal sign operator is a CAST.</description>
+    </item>
+    
     <item>
       <title>How to Code (Part 1)</title>
       <link>https://armand-carstens.github.io/howtocode/part1htc/</link>

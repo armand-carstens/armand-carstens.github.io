@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Armand Carstens ">
+<meta name="description" content="Defining Basics Since you&amp;rsquo;ve chosen a starting point, I&amp;rsquo;d state the easiest one I know myself. The main goal of the series is to guide you all the way to linked lists and OOP.
+My parameters are as follows Python as a compiler and source code. My own current knowledge of the language. Explaining Turing technology with a simple example. Casting So, the first thing everyone should know is that the equal sign operator is a CAST." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://armand-carstens.github.io/howtocode/part2htc/" />
+
+
+    <title>
+        
+            How to Code (Part 2) :: Armand Carstens 
+        
+    </title>
+
+
+
+
+
+<link rel="stylesheet" href="/main.9e3aeebc862628d5610cad6739003a1782c1cd8fcc425a7f130a0a549c4e9e8f.css" integrity="sha256-njruvIYmKNVhDK1nOQA6F4LBzY/MQlp/EwoKVJxOno8=">
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+<meta itemprop="name" content="How to Code (Part 2)">
+<meta itemprop="description" content="Defining Basics Since you&rsquo;ve chosen a starting point, I&rsquo;d state the easiest one I know myself. The main goal of the series is to guide you all the way to linked lists and OOP.
+My parameters are as follows Python as a compiler and source code. My own current knowledge of the language. Explaining Turing technology with a simple example. Casting So, the first thing everyone should know is that the equal sign operator is a CAST."><meta itemprop="datePublished" content="2023-10-25T08:44:07+02:00" />
+<meta itemprop="dateModified" content="2023-10-25T08:44:07+02:00" />
+<meta itemprop="wordCount" content="474">
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to Code (Part 2)"/>
+<meta name="twitter:description" content="Defining Basics Since you&rsquo;ve chosen a starting point, I&rsquo;d state the easiest one I know myself. The main goal of the series is to guide you all the way to linked lists and OOP.
+My parameters are as follows Python as a compiler and source code. My own current knowledge of the language. Explaining Turing technology with a simple example. Casting So, the first thing everyone should know is that the equal sign operator is a CAST."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2023-10-25 08:44:07 &#43;0200 SAST" />
+
+
+
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BCP5TNBGNP"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-BCP5TNBGNP', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                $</span>
+            <span class="logo__cursor" style=
+                  "
+                   background-color:#00944C;
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/">Home</a></li><li><a href="/blog">Blog</a></li><li><a href="/howtocode">Code</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://armand-carstens.github.io/howtocode/part2htc/">How to Code (Part 2)</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <h2 id="defining-basics">Defining Basics</h2>
+<p>Since you&rsquo;ve chosen a starting point, I&rsquo;d state the easiest one I know myself. The main goal of the series is to guide you all the way to linked lists and OOP.</p>
+<h3 id="my-parameters-are-as-follows">My parameters are as follows</h3>
+<ol>
+<li>Python as a compiler and source code.</li>
+<li>My own current knowledge of the language.</li>
+<li>Explaining Turing technology with a simple example.</li>
+</ol>
+<h3 id="casting">Casting</h3>
+<p>So, the first thing everyone should know is that the equal sign operator is a <em>CAST</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> x <span style="color:#75715e"># Now Y is casted as x and since x is 5, that means y is 5</span>
+</span></span></code></pre></div><p>In the code it is a literal: x is <em>CASTED</em> as a &lsquo;5&rsquo;.
+Then we <em>CAST</em> y as x, meaning y is a clone of x.</p>
+<p>This may be simple for some of you however this is something I see people struggle with even in high-end I.T. jobs.</p>
+<h3 id="commenting">Commenting</h3>
+<p>Comments are made to not run or be understood by the compiler. It&rsquo;s a way of note-taking if you want to call it that.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># This is a comment :)</span>
+</span></span></code></pre></div><p>If you&rsquo;re a Developer, this is a reminder to wake up tomorrow morning and write comments in all your previous code.
+Don&rsquo;t build legacy code without comments !!! For <em>FUCK</em>sakes&hellip;</p>
+<h3 id="variables">Variables</h3>
+<p>You get a variety of variables in different languages but they mostly stay the same.</p>
+<blockquote>
+<p>This table is specifically all the various <em>Data Types</em> in C++.</p>
+</blockquote>
+<p><img src="/datatype%20table.png" alt="Data Types in C++"></p>
+<blockquote>
+<p>However in Python we have other <em>Data Types</em>.</p>
+</blockquote>
+<p><img src="/python_datatype.png" alt="Python Data Types"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>       <span style="color:#75715e"># x is of type int</span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Sally&#34;</span> <span style="color:#75715e"># x is now of type str</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> str(<span style="color:#ae81ff">3</span>)    <span style="color:#75715e"># x will be &#39;3&#39; and be a str</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> int(<span style="color:#ae81ff">3</span>)    <span style="color:#75715e"># y will be 3 and be an int</span>
+</span></span><span style="display:flex;"><span>z <span style="color:#f92672">=</span> float(<span style="color:#ae81ff">3</span>)  <span style="color:#75715e"># z will be 3.0 and be a float</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Example</th>
+<th>Data Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x = &ldquo;Hello&rdquo;</td>
+<td><em>String</em></td>
+</tr>
+<tr>
+<td>x = 20</td>
+<td><em>Integer</em></td>
+</tr>
+<tr>
+<td>x = 20.5</td>
+<td><em>Float</em></td>
+</tr>
+<tr>
+<td>x = 1j</td>
+<td><em>Complex</em></td>
+</tr>
+<tr>
+<td>x = [&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;]</td>
+<td><em>List</em></td>
+</tr>
+<tr>
+<td>x = (&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;)</td>
+<td><em>Tuple</em></td>
+</tr>
+<tr>
+<td>x = range(6)</td>
+<td><em>Range</em></td>
+</tr>
+<tr>
+<td>x = {&ldquo;name&rdquo; : &ldquo;John&rdquo;, &ldquo;age&rdquo; : 36}</td>
+<td><em>Dictionary</em></td>
+</tr>
+<tr>
+<td>x = {&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;}</td>
+<td><em>Set</em></td>
+</tr>
+<tr>
+<td>x = frozenset({&ldquo;apple&rdquo;, &ldquo;banana&rdquo;, &ldquo;cherry&rdquo;})</td>
+<td><em>Frozenset</em></td>
+</tr>
+<tr>
+<td>x = True</td>
+<td><em>Boolean</em></td>
+</tr>
+<tr>
+<td>x = b&quot;Hello&quot;</td>
+<td><em>Bytes</em></td>
+</tr>
+<tr>
+<td>x = bytearray(5)</td>
+<td><em>Bytearray</em></td>
+</tr>
+<tr>
+<td>x = memoryview(bytes(5))</td>
+<td><em>Memoryview</em></td>
+</tr>
+<tr>
+<td>x = None</td>
+<td><em>NoneType</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Each of these examples have also specific <a href="https://en.wikipedia.org/wiki/Syntax_(programming_languages)"><em>SYNTAX</em></a> that works on each of them.</p>
+</blockquote>
+<h2 id="operators---smooth-operator-">Operators - &ldquo;Smooth Operator !&rdquo;</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Name</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>x + y</td>
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>x - y</td>
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>x * y</td>
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>x / y</td>
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>x % y</td>
+</tr>
+<tr>
+<td>**</td>
+<td>Exponentiation</td>
+<td>x ** y</td>
+</tr>
+<tr>
+<td>//</td>
+<td>Floor division</td>
+<td>x // y</td>
+</tr>
+</tbody>
+</table>
+<p>Such as in math operators -&gt; Computers handle it the same</p>
+<blockquote>
+<p>Note: There are exceptions! These are known as: <a href="https://en.wikipedia.org/wiki/Ternary_conditional_operator">Ternary Operands</a> which is varsity level depth.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">+</span> x 
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3 + 5 = 8 etc.</span>
+</span></span></code></pre></div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+        
+      <h4>Comments Section:</h4>
+      
+        <iframe id="cusdis-iframe" srcdoc="<!DOCTYPE html>
+            <html>
+              <head>
+                <link rel=&quot;stylesheet&quot; href=&quot;https://cusdis.com/js/style.css&quot;>
+                <base target=&quot;_parent&quot; />
+                <link>
+                <script>
+                  window.CUSDIS_LOCALE = {&quot;powered_by&quot;:&quot;API Tool&quot;}
+                  window.__DATA__ = {&quot;host&quot;:&quot;https://cusdis.com&quot;,&quot;appId&quot;:&quot;6c393978-e8ad-41a0-8d5a-bde9922df790&quot;,&quot;pageId&quot;:&quot;ec5f53d05790a98b545eb53526e3e813&quot;,&quot;pageUrl&quot;:&quot;http://localhost:1313/blog/introduction/&quot;,&quot;pageTitle&quot;:&quot;Introduction&quot;,&quot;theme&quot;:&quot;dark&quot;}
+                </script>
+                <style>
+                  :root {
+                    color-scheme: dark;
+                    background-color: #232425; /* Add this line to set the background color */
+                    
+                  }
+                  body, html {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    
+                  }
+                </style>
+              </head>
+              <body>
+                <div id=&quot;root&quot;></div>
+                <script src=&quot;https://cusdis.com/js/iframe.umd.js&quot; type=&quot;module&quot;>
+                  
+                </script>
+              </body>
+            </html>" style="width: 100%; border: 0px; height: 100%; margin: 0; padding: 0; overflow: auto; ">
+        </iframe>
+        <script>
+            
+            document.getElementById('cusdis-iframe').onload = function () {
+                
+                var iframeDocument = document.getElementById('cusdis-iframe').contentDocument;
+            
+                
+                var apiToolLineElement = iframeDocument.querySelector('a[href="https://cusdis.com"]');
+                if (apiToolLineElement) {
+                    apiToolLineElement.style.display = 'none';
+                }
+                
+                var contentDiv = iframeDocument.getElementById('root');
+
+                
+                function adjustIframeHeight() {
+                var contentHeight = contentDiv.scrollHeight + 40;
+                document.getElementById('cusdis-iframe').style.height = contentHeight + 'px';
+                }
+
+                
+                setInterval(adjustIframeHeight, 1000); 
+                window.addEventListener('resize', adjustIframeHeight);
+            };
+          </script>
+      
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2023</span>
+            <span><a href="https://armand-carstens.github.io/">Armand Carstens</a></span>
+            <span></span>
+            
+            
+        </div>
+    </div>
+    
+    
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Made with &#10084;</span>
+        </div>
+    </div>
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+
+
+
+    </body>
+</html>
