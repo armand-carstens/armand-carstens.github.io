@@ -6,7 +6,17 @@
     <description>Recent content in Howtocodes on Armand Carstens</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2023 08:44:07 +0200</lastBuildDate><atom:link href="https://armand-carstens.github.io/howtocode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Oct 2023 15:44:22 +0200</lastBuildDate><atom:link href="https://armand-carstens.github.io/howtocode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Code (Part 3)</title>
+      <link>https://armand-carstens.github.io/howtocode/part3htc/</link>
+      <pubDate>Tue, 31 Oct 2023 15:44:22 +0200</pubDate>
+      
+      <guid>https://armand-carstens.github.io/howtocode/part3htc/</guid>
+      <description>Defining Basics (Part 2) Conditionals In programming we have conditional terms to the fact that:
+Most/ I mean ALL of programming is conditional Every single programming language &amp;hellip; Understanding the logic gate ideological connection behind coding Such as programming microcontrollers Arduino&amp;rsquo;s C library, Raspberry Pi&amp;rsquo;s own IDE in a custom OS etc. Thus leading to the discrete mathematical inductions of computers Understanding math behind it such as De Morgan&amp;rsquo;s law for Date-Range calculation etc.</description>
+    </item>
+    
     <item>
       <title>How to Code (Part 2)</title>
       <link>https://armand-carstens.github.io/howtocode/part2htc/</link>
